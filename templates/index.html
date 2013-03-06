@@ -1,0 +1,14 @@
+<!doctype html>
+<title>Hangman</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
+<div class=page>
+  <h1>Let's Play Hangman</h1>
+  <div>
+    <asciiart>
+      {{art}}
+    </asciiart>
+    <form method='post' action='start' >
+      <input type='submit' value='OK!'/>
+    </form>
+  </div>
+</div>

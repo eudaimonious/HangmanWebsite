@@ -1,0 +1,18 @@
+<!doctype html>
+<title>Hangman</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
+<div class=page>
+  <h1>Welcome to The Game</h1>
+  <div>
+    <asciiart>
+      {{art}}
+    </asciiart>
+    <p>
+      I am thinking of a word that is {{length}} letters long. You have {{numguesses}} guesses left. Please enter a letter.
+    </p>
+    <form method='post' action='guess' >
+      <input type ='text' name='guess'>
+      <input type='submit' value='Submit'/>
+    </form>
+  </div>
+</div>
